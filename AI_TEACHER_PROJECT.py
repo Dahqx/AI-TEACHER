@@ -226,7 +226,8 @@ def quizlet(text):  # Define the main function to display the user interface
         quiz_questions = st.session_state.quiz_questions
         time_minutes = st.session_state.time_minutes
 
-        st.write("Quiz timer is in the end of the page")
+        st.write("Refresh the page if you want to take another quiz :D")
+        st.write("The timer is at the bottom of the page!")
 
         # Display quiz questions
         handle_quiz(quiz_questions)  # Handle displaying questions and collecting answers
@@ -237,7 +238,7 @@ def quizlet(text):  # Define the main function to display the user interface
 
 def main():
     st.title("📚 Study Guide Website")
-    st.markdown("Welcome to the Study Guide Website! This platform allows you to interact with your lecture slides and make studying easier. Please upload a PDF to get started.")
+    st.markdown("Welcome to the Study Guide Website! This platform allows you to interact with your lecture slides and make studying easier.")
 
     uploaded_file = st.file_uploader("Please upload a PDF file", type=["pdf"])
     if uploaded_file:
@@ -247,7 +248,6 @@ def main():
                                   ["Summarize", "ملخص بالعربي", "YouTube Video Suggestion", "Chat with a Professional", "Test your Understanding"])
 
             if option == "Chat with a Professional":
-                st.write("Loading...\nYou can press the button again to get a differnet respond!!")
                 response = process_text_with_gpt(text, option)
                 st.subheader("Explanation of the Lesson")
                 st.text_area("Explanation:", value=response, height=300)
@@ -279,7 +279,6 @@ def main():
 
 
             if option == "Test your Understanding":
-                st.write("Loading...\nYou can press the button again to get a differnet respond!!")
                 quizlet(text)
 
             if option == "Summarize" or option == "ملخص بالعربي":
