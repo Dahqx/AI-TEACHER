@@ -1,6 +1,6 @@
 
 
-# 🧠 AI-TEACHER
+#  AI-TEACHER
 
 **AI-TEACHER** is a smart and simple platform that helps university students study better and faster. It turns every lecture into:
 
