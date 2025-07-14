@@ -9,9 +9,8 @@
 * 🎥 A list of helpful YouTube videos
 * 🤖 A chatbot for each subject to answer questions
 
----
 
-## 🎯 First Version
+##  First Version
 
 This is just the beginning!
 We’re starting small—just for the **AI club **—with:
@@ -20,16 +19,14 @@ We’re starting small—just for the **AI club **—with:
 * Low-cost and easy to build
 * A free model to learn and grow
 
----
 
-## 💬 Future Vision
+##  Future Vision
 
 Later, each university will get its own version with its own lectures and materials.
 and an account for each student to store their progress
 
----
 
-## ▶ How to Use
+##  How to Use
 
 1. Open the site
 2. Upload your subjects slides in PDF
